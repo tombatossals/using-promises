@@ -1,0 +1,22 @@
+{
+  "name": "using-promises",
+  "version": "0.0.0",
+  "description": "Examples of using promises with Node.JS",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tombatossals/using-promises.git"
+  },
+  "keywords": [
+    "nodeJS",
+    "promises"
+  ],
+  "author": "David rubert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tombatossals/using-promises/issues"
+  },
+  "homepage": "https://github.com/tombatossals/using-promises",
+  "dependencies": {
+    "q": "~1.0.0"
+  }
+}
