@@ -2,6 +2,15 @@ var Q = require('q');
 
 const NUMBER = 5;
 
+var arrayOfNumbers = function(num) {
+    var res = [];
+    for (var i=0; i< num; i++) {
+        res.push(i);
+    }
+
+    return res;
+};
+
 var waitFn = function(number) {
     var df = Q.defer();
     setTimeout(function() {
@@ -12,7 +21,7 @@ var waitFn = function(number) {
     return df.promise;
 }
 
-var values = [ 0, 1, 2, 3, 4, 5 ];
+var values = arrayOfNumbers(NUMBER);
 
 var chainPromises = function(promises) {
     var first = promises[0];
