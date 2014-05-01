@@ -26,12 +26,13 @@ var values = arrayOfNumbers(NUMBER);
 var chainPromises = function(promises) {
     var first = promises[0];
     promises = promises.splice(1);
+    console.log("Starting " + first + "...");
     return promises.reduce(function(previous, item) {
         return previous.then(function(value) {
             console.log("Starting " + item + "...");
             return waitFn(item);
         });
-    }, Q(first));
+    }, waitFn(first));
 };
 
 chainPromises(values).then(function(res) {
